@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dsdbqjouip500"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_wtcfe"]
+[ext_resource type="Script" path="res://ExampleResource.gd" id="2_0e48y"]
+
+[sub_resource type="Resource" id="Resource_dj2o6"]
+script = ExtResource("2_0e48y")
+name = "Example"
+amount = 70.0
+
+[sub_resource type="Resource" id="Resource_bptvw"]
+script = ExtResource("2_0e48y")
+name = "Example2"
+amount = 20.0
+
+[sub_resource type="Resource" id="Resource_7xobh"]
+script = ExtResource("2_0e48y")
+name = "ColorNotSet"
+amount = 8.92
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wtcfe")
+test_array = Array[ExtResource("2_0e48y")]([SubResource("Resource_dj2o6"), SubResource("Resource_bptvw"), SubResource("Resource_7xobh")])

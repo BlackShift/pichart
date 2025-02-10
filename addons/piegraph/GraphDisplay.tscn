@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://i7a5typkuk2l"]
+
+[ext_resource type="Script" path="res://addons/piegraph/GraphDisplay.gd" id="1_wfxah"]
+[ext_resource type="Script" uid="uid://wyby4b51gphg" path="res://addons/piegraph/PieGraphControl.gd" id="2_p43dw"]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_wfxah")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="graph_key" type="VBoxContainer" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pi_graph" type="Control" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_p43dw")
+visualized_data = Array[float]([2.885, 3.94, 1.485])
+colors = Array[Color]([Color(0.862745, 0, 0, 1), Color(0, 0.929412, 0, 1)])
+metadata/_custom_type_script = ExtResource("2_p43dw")

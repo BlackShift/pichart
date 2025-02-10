@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://p8uuv6b522at"]
+
+[node name="KeyItem" type="HBoxContainer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(0.862745, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Test Value"
+horizontal_alignment = 2
